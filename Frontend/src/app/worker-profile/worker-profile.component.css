@@ -1,0 +1,50 @@
+.main-div{
+    /* background: url('images/black-bg2.jpg') no-repeat center center fixed;   */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.main-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('images/black-bg2.jpg') no-repeat center center fixed;  /* Background image for blur effect */
+    background-size: cover;
+    filter: brightness(50%) ;  /* Adjust brightness and blur */
+    z-index: -1;  /* Ensure it stays behind the content */
+} 
+
+
+.profile-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    background-color: rgba(7, 7, 7, 0.897); 
+    color: white;
+    border-width: 2px;
+    border-color: rgba(138, 136, 136, 0.541);
+  }
+  /* .card-body {
+    
+    border-radius: 5px;
+  } */
+  
+  .profile-img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .profile-img input[type="file"] {
+    display: block;
+    margin: auto;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
